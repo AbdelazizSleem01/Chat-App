@@ -10,7 +10,7 @@ const AuthPage = (props) => {
     const onLogin = (e) => {
         e.preventDefault();
         axios
-            .post("http://localhost:3001/login", { username, secret })
+            .post("https://chat-app-real-time-fp9b.onrender.com/login", { username, secret })
             .then((r) => props.onAuth({ ...r.data, secret }))
             .catch((e) => console.log(JSON.stringify(e.response.data)));
     };
