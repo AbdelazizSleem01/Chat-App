@@ -12,7 +12,7 @@ const SignUp = (props) => {
     const onSignup = (e) => {
         e.preventDefault();
         axios
-            .post("http://localhost:3001/signup", {
+            .post("https://chat-app-real-time-fp9b.onrender.com/signup", {
                 username,
                 secret,
                 first_name,
